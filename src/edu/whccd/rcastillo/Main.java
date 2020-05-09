@@ -21,10 +21,21 @@ public class Main {
             grades[i] = sc.nextDouble();
         }
 
-
         for(int i = 0; i < 5; i++) {
-            System.out.println("grades " + grades[i]);
+            System.out.println("grades: " + grades[i]);
+
         }
+
+        double sum = 0;
+        for (int i = 0; i < 5; i++) {
+            sum = sum + grades[i];
+        }
+        System.out.println("Grades total: " + sum);
+        System.out.println("Grades average: " + sum/grades.length);
+        System.out.println("Grades length: " + grades.length);
+
+
+        System.out.println("*******************************************************");
 
 
     }
