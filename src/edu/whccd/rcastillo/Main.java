@@ -6,6 +6,7 @@ package edu.whccd.rcastillo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -36,6 +37,18 @@ public class Main {
 
 
         System.out.println("*******************************************************");
+
+        List<String> cities = new ArrayList<String>();
+
+        String continueFlag = "n";
+        String city = "";
+        do {
+            System.out.print("Enter a City: ");
+            city = sc.nextLine();
+            cities.add(city);
+            System.out.print("Add another City? (y/n): ");
+            continueFlag = sc.nextLine();
+        } while (continueFlag.equalsIgnoreCase("y"));
 
 
     }
