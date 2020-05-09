@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double[] grades = new double[5];
+         double[] grades = new double[5];
 
 
         for (int i = 0; i < 5; i++) {
@@ -41,7 +41,7 @@ public class Main {
         List<String> cities = new ArrayList<String>();
 
         String continueFlag = "n";
-        String city = "";
+        String city = sc.nextLine();
         do {
             System.out.print("Enter a City: ");
             city = sc.nextLine();
@@ -49,7 +49,11 @@ public class Main {
             System.out.print("Add another City? (y/n): ");
             continueFlag = sc.nextLine();
         } while (continueFlag.equalsIgnoreCase("y"));
-
+        Collections.sort(cities);
+        for (int i = 0; i < cities.size(); i++) {
+            System.out.println(cities.get(i));
+        }
+        System.out.print("Cities Size: " + cities.size());
 
     }
 }
