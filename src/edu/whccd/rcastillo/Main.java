@@ -13,11 +13,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double[] grades = {0, 1, 2, 3, 4};
-        grades[0];
-        grades[1];
-        grades[2];
-        grades[3];
-        grades[4];
+        double[] grades = new double[5];
+
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Enter Grade (0-100): ");
+            grades[i] = sc.nextDouble();
+        }
+
+
+        for(int i = 0; i < 5; i++) {
+            System.out.println("grades " + grades[i]);
+        }
+
+
     }
 }
