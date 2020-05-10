@@ -50,8 +50,8 @@ public class Main {
             continueFlag = sc.nextLine();
         } while (continueFlag.equalsIgnoreCase("y"));
         Collections.sort(cities);
-        for (int i = 0; i < cities.size(); i++) {
-            System.out.println(cities.get(i));
+        for (String cityName : cities) {
+            System.out.println(cityName);
         }
         System.out.print("Cities Size: " + cities.size());
 
